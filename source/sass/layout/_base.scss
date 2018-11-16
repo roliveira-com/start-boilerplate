@@ -1,0 +1,119 @@
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #f1f1f1;
+  color: $strong;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin: 0;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: var(--clear);
+  border: 1px solid var(--smooth);
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.visibility-off{
+  visibility: hidden;
+}
+
+.hide-navigation{
+  position: absolute;
+  text-indent: -8000px;
+  left: -50px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+
+  &.top{
+    background-color: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    margin-top: -3em;
+  }
+}
+
+.list{
+  background-color: #FFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);  
+  margin: -3em auto 1em;
+  padding: 15px;
+  width: 412px;
+
+  .list__row{
+    border-bottom: 1px solid #dedede;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+}
+
+.data-header{
+  text-align: center;
+}
